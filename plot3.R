@@ -1,5 +1,9 @@
 ##### plot3.R ##########################################################
 
+# assumes that household_power_consumption.txt is in the working dir
+# to avoid reading the whole file, some people did neat stuff
+# with sql packages; they know more than I do
+
 dt <- read.table("household_power_consumption.txt",
    sep=";",
    header=TRUE,
@@ -26,6 +30,6 @@ legend("topright",
 # do the copy to png
 
 dev.copy(png,file="plot3.png",width=480,height=480)
-def.off() # this was emphasized heartily in the class lecture
+dev.off() # this was emphasized heartily in the class lecture
 
 ##### the end ##########################################################

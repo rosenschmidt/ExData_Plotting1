@@ -1,5 +1,9 @@
 ##### plot4.R ##########################################################
 
+# assumes that household_power_consumption.txt is in the working dir
+# to avoid reading the whole file, some people did neat stuff
+# with sql packages; they know more than I do
+
 # read data - raw and all of it
 dt <- read.table("household_power_consumption.txt",
    sep=";",
@@ -52,7 +56,7 @@ plot(datetime,Global_reactive_power,type="l")
 
 # do the copy to png
 
-dev.copy(png,file="plot2.png",width=480,height=480)
-def.off() # this was emphasized heartily in the class lecture
+dev.copy(png,file="plot4.png",width=480,height=480)
+dev.off() # this was emphasized heartily in the class lecture
 
 ##### the end ##########################################################

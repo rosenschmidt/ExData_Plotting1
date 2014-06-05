@@ -1,5 +1,9 @@
 ##### plot1.R###########################################################
 
+# assumes that household_power_consumption.txt is in the working dir
+# to avoid reading the whole file, some people did neat stuff
+# with sql packages; they know more than I do
+
 dt <- read.table("household_power_consumption.txt",
    sep=";",
    header=TRUE,
@@ -22,7 +26,7 @@ hist(dtFeb12$Global_active_power,
 
 # do the copy to png
 
-dev.copy(png,file="plot1.png",with=480,height=480)
+dev.copy(png,file="plot1.png",width=480,height=480)
 
 dev.off() # this was emphasized in the class lectures!!!
 
