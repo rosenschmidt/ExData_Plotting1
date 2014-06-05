@@ -1,4 +1,4 @@
-# plot4.R
+##### plot4.R ##########################################################
 
 # read data - raw and all of it
 dt <- read.table("household_power_consumption.txt",
@@ -50,4 +50,9 @@ plot(datetime,Global_reactive_power,type="l")
 
 })
 
-# the end
+# do the copy to png
+
+dev.copy(png,file="plot2.png",width=480,height=480)
+def.off() # this was emphasized heartily in the class lecture
+
+##### the end ##########################################################

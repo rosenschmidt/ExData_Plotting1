@@ -1,4 +1,4 @@
-# plot1.R
+##### plot1.R###########################################################
 
 dt <- read.table("household_power_consumption.txt",
    sep=";",
@@ -20,4 +20,10 @@ hist(dtFeb12$Global_active_power,
    xlab="Global Active Power (kilowatts)",
    col="red")
 
-# the end
+# do the copy to png
+
+dev.copy(png,file="plot1.png",with=480,height=480)
+
+dev.off() # this was emphasized in the class lectures!!!
+
+##### the end ##########################################################
