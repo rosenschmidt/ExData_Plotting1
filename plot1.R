@@ -1,6 +1,6 @@
 # plot1.R
 
-dt <- read.table("household-power-consumption.txt",sep=";",header=TRUE,na.string="?")
+dt <- read.table("household_power_consumption.txt",sep=";",header=TRUE,na.string="?")
 
 dt$Date <- as.date(dt$Date,format="%d/%m/%Y")
 
