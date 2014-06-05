@@ -17,4 +17,7 @@ theDates <- strptime(theDates,"%d/%m/%Y %H:%M:%S",tz="")
 
 hist(dtFeb12$Global_active_power,
    main="Global Active Power",
-   xlab="Global Active Power (kilowatts)")
+   xlab="Global Active Power (kilowatts)",
+   col="red")
+
+# the end

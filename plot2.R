@@ -19,3 +19,5 @@ plot(theDates,dtFeb12$Global_active_power,
   type="l",
   ylab="Global Active Power (kilowatts)",
   xlab="")
+
+# the end
